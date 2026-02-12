@@ -100,3 +100,10 @@ func ExampleFactorial() {
 	fmt.Println(result.String())
 	// Output: 120
 }
+
+
+func ExampleFactorial_large() {
+	result, _ := Factorial(20)
+	fmt.Println(result.String())
+	// Output: 2432902008176640000
+}

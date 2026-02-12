@@ -152,3 +152,12 @@ func ExampleBinomial() {
 	fmt.Println(result.String())
 	// Output: 10
 }
+
+
+func ExampleBinomial_symmetry() {
+	// C(n, k) = C(n, n-k)
+	left, _ := Binomial(10, 3)
+	right, _ := Binomial(10, 7)
+	fmt.Printf("C(10,3) = %s, C(10,7) = %s\n", left, right)
+	// Output: C(10,3) = 120, C(10,7) = 120
+}
