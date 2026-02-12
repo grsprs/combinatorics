@@ -9,8 +9,8 @@ func PermuteIter[T any](items []T) <-chan []T {
 	go func() {
 		defer close(ch)
 
-		if items == nil || len(items) == 0 {
-			if items != nil && len(items) == 0 {
+		if len(items) == 0 {
+			if items != nil {
 				ch <- []T{}
 			}
 			return
