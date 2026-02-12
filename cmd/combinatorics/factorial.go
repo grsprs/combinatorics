@@ -21,6 +21,7 @@ func handleFactorial(args []string) {
 
 	n, err := strconv.Atoi(args[0])
 	if err != nil {
+		// #nosec G705 - CLI output, not web context
 		fmt.Fprintf(os.Stderr, "Error: invalid number '%s'\n", args[0])
 		os.Exit(1)
 	}

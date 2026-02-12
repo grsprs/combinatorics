@@ -28,6 +28,7 @@ func handleCombine(args []string) {
 
 	k, err := strconv.Atoi(args[1])
 	if err != nil {
+		// #nosec G705 - CLI output, not web context
 		fmt.Fprintf(os.Stderr, "Error: invalid k value '%s'\n", args[1])
 		os.Exit(1)
 	}

@@ -29,6 +29,7 @@ func main() {
 	case "help", "-h", "--help":
 		printUsage()
 	default:
+		// #nosec G705 - CLI output, not web context
 		fmt.Fprintf(os.Stderr, "Unknown command: %s\n\n", command)
 		printUsage()
 		os.Exit(1)
