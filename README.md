@@ -7,7 +7,7 @@
 [![codecov](https://codecov.io/gh/grsprs/combinatorics/branch/main/graph/badge.svg)](https://codecov.io/gh/grsprs/combinatorics)
 [![Go Reference](https://pkg.go.dev/badge/github.com/grsprs/combinatorics.svg)](https://pkg.go.dev/github.com/grsprs/combinatorics)
 
-Production-grade combinatorics library in Go featuring efficient implementations of permutations, combinations, factorials, and binomial coefficients with generics support.
+Production-grade combinatorics library in Go featuring efficient implementations of permutations, combinations, factorials, and binomial coefficients with generics support and CLI tool.
 
 ## Features
 
