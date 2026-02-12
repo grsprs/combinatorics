@@ -20,3 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - CI/CD pipeline with GitHub Actions
 - GoDoc examples for all packages
 - Generic type support for permutations and combinations
+
+### Added
+- CLI tool for command-line calculations (factorial, binomial, permute, combine)
+- JSON output support for CLI commands

@@ -16,15 +16,28 @@ Production-grade combinatorics library in Go featuring efficient implementations
 - **Combinations** - Generate k-combinations efficiently
 - **Iterators** - Memory-efficient lazy generation using channels
 - **Generics** - Type-safe operations for any comparable type
+- **CLI Tool** - Command-line interface for quick calculations
 - **100% Test Coverage** - Comprehensive test suite with benchmarks
 
 ## Installation
+
+### As a Library
 
 ```bash
 go get github.com/grsprs/combinatorics
 ```
 
+### As a CLI Tool
+
+```bash
+go install github.com/grsprs/combinatorics/cmd/combinatorics@latest
+```
+
+Or download pre-built binaries from [Releases](https://github.com/grsprs/combinatorics/releases).
+
 ## Quick Start
+
+### Library Usage
 
 ### Factorial
 
@@ -87,6 +100,29 @@ fmt.Printf("Total: %d\n", len(combs)) // 6
 for comb := range combinations.CombineIter(items, 2) {
     fmt.Println(comb)
 }
+```
+
+### CLI Usage
+
+```bash
+# Calculate factorial
+combinatorics factorial 10
+# Output: 10! = 3628800
+
+# Calculate binomial coefficient
+combinatorics binomial 10 3
+# Output: C(10, 3) = 120
+
+# Generate permutations
+combinatorics permute 1 2 3
+# Output: All 6 permutations
+
+# Generate combinations
+combinatorics combine -k 2 1 2 3 4
+# Output: All 6 2-combinations
+
+# JSON output
+combinatorics factorial 10 --json
 ```
 
 ## API Documentation
