@@ -4,7 +4,8 @@
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![CI Status](https://github.com/grsprs/combinatorics/workflows/CI/badge.svg)](https://github.com/grsprs/combinatorics/actions)
 [![Go Report Card](https://goreportcard.com/badge/github.com/grsprs/combinatorics)](https://goreportcard.com/report/github.com/grsprs/combinatorics)
-[![Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen.svg)](https://github.com/grsprs/combinatorics)
+[![codecov](https://codecov.io/gh/grsprs/combinatorics/branch/main/graph/badge.svg)](https://codecov.io/gh/grsprs/combinatorics)
+[![Go Reference](https://pkg.go.dev/badge/github.com/grsprs/combinatorics.svg)](https://pkg.go.dev/github.com/grsprs/combinatorics)
 
 Production-grade combinatorics library in Go featuring efficient implementations of permutations, combinations, factorials, and binomial coefficients with generics support.
 
