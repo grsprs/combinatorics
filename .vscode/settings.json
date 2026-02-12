@@ -1,0 +1,19 @@
+{
+  "go.testOnSave": true,
+  "go.coverOnSave": true,
+  "go.lintOnSave": "workspace",
+  "go.formatTool": "goimports",
+  "go.useLanguageServer": true,
+  "editor.formatOnSave": true,
+  "coverage-gutters.coverageFileNames": [
+    "coverage.out",
+    "coverage.txt"
+  ],
+  "coverage-gutters.showLineCoverage": true,
+  "coverage-gutters.showRulerCoverage": true,
+  "[go]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "golang.go",
+    "ryanluker.vscode-coverage-gutters",
+    "eamodio.gitlens",
+    "redhat.vscode-yaml",
+    "yzhang.markdown-all-in-one"
+  ]
+}
