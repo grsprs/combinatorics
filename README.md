@@ -1,6 +1,6 @@
 # Combinatorics
 
-[![Go Version](https://img.shields.io/badge/Go-1.22%2B-blue.svg)](https://golang.org/dl/)
+[![Go Version](https://img.shields.io/badge/Go-1.23%2B-blue.svg)](https://golang.org/dl/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![CI Status](https://github.com/grsprs/combinatorics/workflows/CI/badge.svg)](https://github.com/grsprs/combinatorics/actions)
 [![Go Report Card](https://goreportcard.com/badge/github.com/grsprs/combinatorics)](https://goreportcard.com/report/github.com/grsprs/combinatorics)
