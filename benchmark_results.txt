@@ -1,0 +1,44 @@
+goos: windows
+goarch: amd64
+pkg: github.com/grsprs/combinatorics/binomial
+cpu: Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz
+BenchmarkBinomial/C(10,5)-8         	 3626236	       330.7 ns/op	      88 B/op	       3 allocs/op
+BenchmarkBinomial/C(20,10)-8        	 2181832	       539.3 ns/op	      88 B/op	       3 allocs/op
+BenchmarkBinomial/C(50,25)-8        	 1000000	      1247 ns/op	      88 B/op	       3 allocs/op
+BenchmarkBinomial/C(100,50)-8       	  336013	      3768 ns/op	      88 B/op	       3 allocs/op
+PASS
+ok  	github.com/grsprs/combinatorics/binomial	5.908s
+goos: windows
+goarch: amd64
+pkg: github.com/grsprs/combinatorics/combinations
+cpu: Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz
+BenchmarkCombine/C(10,5)-8         	   52717	     20393 ns/op	   27864 B/op	     262 allocs/op
+BenchmarkCombine/C(15,7)-8         	    2205	    584083 ns/op	  921835 B/op	    6452 allocs/op
+BenchmarkCombine/C(20,10)-8        	      56	  20895205 ns/op	40865927 B/op	  184788 allocs/op
+BenchmarkCombineIter/C(10,5)-8     	   10000	    111432 ns/op	   12322 B/op	     255 allocs/op
+BenchmarkCombineIter/C(15,7)-8     	     415	   2945400 ns/op	  412083 B/op	    6438 allocs/op
+BenchmarkCombineIter/C(20,10)-8    	      13	  87659908 ns/op	14780908 B/op	  184760 allocs/op
+PASS
+ok  	github.com/grsprs/combinatorics/combinations	8.534s
+goos: windows
+goarch: amd64
+pkg: github.com/grsprs/combinatorics/factorial
+cpu: Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz
+BenchmarkFactorial/n=10-8         	 4424268	       274.2 ns/op	      88 B/op	       3 allocs/op
+BenchmarkFactorial/n=20-8         	 2328636	       448.2 ns/op	      88 B/op	       3 allocs/op
+BenchmarkFactorial/n=50-8         	 1000000	      1023 ns/op	      88 B/op	       3 allocs/op
+BenchmarkFactorial/n=100-8        	  595774	      2189 ns/op	     184 B/op	       4 allocs/op
+PASS
+ok  	github.com/grsprs/combinatorics/factorial	5.492s
+goos: windows
+goarch: amd64
+pkg: github.com/grsprs/combinatorics/permutations
+cpu: Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz
+BenchmarkPermute/n=5-8   	  104766	     11109 ns/op	   13288 B/op	     128 allocs/op
+BenchmarkPermute/n=7-8   	    2499	    524873 ns/op	  832491 B/op	    5056 allocs/op
+BenchmarkPermute/n=8-8   	     234	   4887930 ns/op	 7514107 B/op	   40344 allocs/op
+BenchmarkPermuteIter/n=5-8         	   22374	     54267 ns/op	    5921 B/op	     122 allocs/op
+BenchmarkPermuteIter/n=7-8         	     508	   2272658 ns/op	  322722 B/op	    5042 allocs/op
+BenchmarkPermuteIter/n=8-8         	      68	  18309729 ns/op	 2580659 B/op	   40322 allocs/op
+PASS
+ok  	github.com/grsprs/combinatorics/permutations	8.839s

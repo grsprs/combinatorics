@@ -1,0 +1,17 @@
+# Code owners are automatically requested for review when someone opens a pull request
+
+# Default owner for everything in the repo
+* @grsprs
+
+# Specific package owners (can be updated as team grows)
+/factorial/ @grsprs
+/binomial/ @grsprs
+/permutations/ @grsprs
+/combinations/ @grsprs
+
+# Documentation
+*.md @grsprs
+/docs/ @grsprs
+
+# CI/CD and GitHub configuration
+/.github/ @grsprs
